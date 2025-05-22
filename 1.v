@@ -47,7 +47,7 @@ module testbench;
         .value(value)
     );
 
-    always #5 clk = ~clk;  // Toggle clock every 5 time units
+    always #5 clk = ~clk;  
 
     initial begin
         clk = 0;
@@ -55,7 +55,7 @@ module testbench;
         memory_val = 32'd42;
         write = 1;
         read = 0;
-        #10;  // wait one clock
+        #10;  
 
         write = 0;
         read = 1;
